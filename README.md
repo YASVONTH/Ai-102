@@ -1,103 +1,127 @@
-# AI Email Writer using Streamlit and Gemini AI
+# AI Content Generator using Gemini & Streamlit
 
 ## Overview
 
-AI Email Writer is a simple web application built using Streamlit and Google's Gemini AI model. The application generates professional email content based on user input. Users can enter a topic, request, or brief description, and the AI automatically creates a well-structured email.
+This project is a simple AI-powered content generation application built using **Python**, **Streamlit**, and **Google Gemini API**. It provides two useful tools:
+
+1. **AI Email Writer** – Generates professional emails based on user input.
+2. **AI Blog Post Generator** – Creates blog content for any topic provided by the user.
+
+The application uses the Gemini 2.5 Flash model to generate high-quality text responses quickly.
 
 ## Features
 
-* User-friendly Streamlit interface
-* AI-powered email generation using Gemini 2.5 Flash
-* Instant email creation
-* Simple and lightweight implementation
-* Suitable for professional, academic, and personal emails
+### AI Email Writer
+
+* Generates professional and well-structured emails.
+* Accepts user requirements as input.
+* Produces clear and formal email content instantly.
+
+### AI Blog Post Generator
+
+* Creates informative blog posts on any topic.
+* Generates readable and engaging content.
+* Useful for students, content creators, and bloggers.
 
 ## Technologies Used
 
 * Python
 * Streamlit
-* Google Generative AI (Gemini API)
+* Google Gemini API
+* Gemini 2.5 Flash Model
 
 ## Installation
 
-### 1. Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-email-writer.git
-cd ai-email-writer
+git clone https://github.com/your-username/ai-content-generator.git
+cd ai-content-generator
 ```
 
-### 2. Install Required Packages
+### Step 2: Install Required Packages
 
 ```bash
 pip install streamlit google-generativeai
 ```
 
-### 3. Configure API Key
+### Step 3: Run the Application
 
-Replace the API key in the code with your own Gemini API key.
-
-```python
-genai.configure(api_key="YOUR_API_KEY")
-```
-
-### 4. Run the Application
+For Email Writer:
 
 ```bash
-streamlit run app.py
+streamlit run email_writer.py
+```
+
+For Blog Generator:
+
+```bash
+streamlit run blog_generator.py
 ```
 
 ## Project Structure
 
-```text
-ai-email-writer/
+```
+AI-Content-Generator/
 │
-├── app.py
-├── README.md
-└── requirements.txt
+├── email_writer.py
+├── blog_generator.py
+├── requirements.txt
+└── README.md
 ```
 
-## Usage
+## How It Works
 
-1. Open the application in your browser.
-2. Enter the email topic or request in the text box.
-3. Click the **Submit** button.
-4. The AI generates a professional email based on your input.
+1. Enter a topic or prompt in the text box.
+2. Click the **Submit** button.
+3. The application sends the prompt to the Gemini model.
+4. Gemini generates the requested content.
+5. The generated output is displayed on the Streamlit interface.
 
-## Sample Input
+## Example Use Cases
 
-```text
-Write an email requesting leave for two days due to personal reasons.
+### Email Writer
+
+Input:
+
+```
+Write a leave request email for two days.
 ```
 
-## Sample Output
+Output:
 
-```text
-Subject: Leave Request
+```
+A professional leave request email addressed to the manager.
+```
 
-Dear Manager,
+### Blog Generator
 
-I hope you are doing well. I would like to request leave for two days due to personal reasons. I kindly request you to approve my leave.
+Input:
 
-Thank you for your understanding.
+```
+Artificial Intelligence in Healthcare
+```
 
-Best Regards,
-Employee
+Output:
+
+```
+A detailed blog post discussing AI applications in healthcare.
 ```
 
 ## Future Enhancements
 
 * Email subject generation
-* Multiple email tone options (Formal, Casual, Professional)
-* Copy-to-clipboard feature
-* Email export as PDF
-* Email templates for various purposes
+* Multiple writing styles
+* Content download option
+* Blog length selection
+* Dark mode interface
+* PDF export functionality
 
 ## Author
 
-Yasvonth V.L.
-B.E. Electronics and Communication Engineering (ECE)
+**V. L. Yasvonth**
+B.E Electronics and Communication Engineering (ECE)
 
 ## License
 
-This project is open-source and available for educational and learning purposes.
+This project is developed for educational and learning purposes.
