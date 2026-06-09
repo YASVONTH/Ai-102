@@ -1,127 +1,142 @@
-# AI Content Generator using Gemini & Streamlit
+# AI Content Generator using Streamlit and Gemini
 
 ## Overview
 
-This project is a simple AI-powered content generation application built using **Python**, **Streamlit**, and **Google Gemini API**. It provides two useful tools:
+This project is a simple AI-powered web application built using **Streamlit** and **Google Gemini AI**. It provides three useful tools:
 
-1. **AI Email Writer** – Generates professional emails based on user input.
-2. **AI Blog Post Generator** – Creates blog content for any topic provided by the user.
+1. **Email Writer** – Generates professional emails based on user input.
+2. **Blog Post Generator** – Creates blog content for any given topic.
+3. **Code Explainer** – Explains programming code in an easy-to-understand manner.
 
-The application uses the Gemini 2.5 Flash model to generate high-quality text responses quickly.
+The application uses Google's Gemini 2.5 Flash model to generate high-quality content quickly and efficiently.
+
+---
 
 ## Features
 
-### AI Email Writer
+### Email Writer
 
-* Generates professional and well-structured emails.
-* Accepts user requirements as input.
-* Produces clear and formal email content instantly.
+* Generates professional and formal emails.
+* Accepts user prompts and converts them into complete email content.
+* Useful for business, academic, and personal communication.
 
-### AI Blog Post Generator
+### Blog Post Generator
 
-* Creates informative blog posts on any topic.
-* Generates readable and engaging content.
-* Useful for students, content creators, and bloggers.
+* Creates detailed blog posts on any topic.
+* Generates structured and readable content.
+* Suitable for content creators, students, and bloggers.
+
+### Code Explainer
+
+* Explains source code in simple language.
+* Helps beginners understand programming concepts.
+* Supports learning and debugging processes.
+
+---
 
 ## Technologies Used
 
 * Python
 * Streamlit
-* Google Gemini API
-* Gemini 2.5 Flash Model
+* Google Gemini AI
+* Generative AI
+
+---
 
 ## Installation
 
-### Step 1: Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/ai-content-generator.git
 cd ai-content-generator
 ```
 
-### Step 2: Install Required Packages
+### Install Dependencies
 
 ```bash
-pip install streamlit google-generativeai
+pip install streamlit
+pip install google-generativeai
 ```
 
-### Step 3: Run the Application
-
-For Email Writer:
+### Run the Application
 
 ```bash
-streamlit run email_writer.py
+streamlit run app.py
 ```
 
-For Blog Generator:
-
-```bash
-streamlit run blog_generator.py
-```
+---
 
 ## Project Structure
 
-```
+```text
 AI-Content-Generator/
 │
 ├── email_writer.py
 ├── blog_generator.py
+├── code_explainer.py
 ├── requirements.txt
 └── README.md
 ```
 
-## How It Works
+---
 
-1. Enter a topic or prompt in the text box.
-2. Click the **Submit** button.
-3. The application sends the prompt to the Gemini model.
-4. Gemini generates the requested content.
-5. The generated output is displayed on the Streamlit interface.
-
-## Example Use Cases
+## Usage
 
 ### Email Writer
 
-Input:
+Enter a topic or requirement, and the AI will generate a professional email.
 
-```
-Write a leave request email for two days.
-```
+### Blog Generator
 
-Output:
+Provide a blog topic, and the AI will create a detailed blog post.
 
-```
-A professional leave request email addressed to the manager.
+### Code Explainer
+
+Paste or describe code, and the AI will explain its functionality step by step.
+
+---
+
+## Example Prompts
+
+### Email Writer
+
+```text
+Write an email requesting leave for two days.
 ```
 
 ### Blog Generator
 
-Input:
-
-```
+```text
 Artificial Intelligence in Healthcare
 ```
 
-Output:
+### Code Explainer
 
+```python
+for i in range(5):
+    print(i)
 ```
-A detailed blog post discussing AI applications in healthcare.
-```
+
+---
 
 ## Future Enhancements
 
-* Email subject generation
-* Multiple writing styles
-* Content download option
-* Blog length selection
-* Dark mode interface
-* PDF export functionality
+* Multi-language support
+* Download generated content as PDF
+* Content history tracking
+* Dark mode UI
+* Additional AI writing tools
+
+---
 
 ## Author
 
-**V. L. Yasvonth**
+V L Yasvonth
 B.E Electronics and Communication Engineering (ECE)
+
+---
 
 ## License
 
-This project is developed for educational and learning purposes.
+This project is intended for educational and learning purposes.
